@@ -57,7 +57,7 @@
             &kp ESC    &trans     &trans     &trans     &trans         &trans     &kp RET    &kp UP     &trans     &kp DQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ DELETE   │          │   TAB    │          │          │   │          │  LEFT    │   DOWN   │   RIGHT  │     '    │
-            &kp DEL    &kp N4     &kp TAB     &trans    &trans         &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &kp SQT
+            &kp DEL    &kp N4     &kp TAB     &trans     &tog 5        &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ CAPS     │          │          │          │          │   │          │          │          │          │          │
            &caps_word  &trans     &trans     &trans     &tog 3         &trans     &trans     &trans     &trans     &trans
@@ -74,7 +74,7 @@
             &kp ESC    &kp DEL    &kp UP     &kp RET    &trans         &trans     &kp LPAR    &kp RPAR   &kp MINUS  &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   TAB    │   LEFT   │   DOWN   │   RIGHT  │          │   │    ~     │   RET    │    TAB   │          │   BSPC   │
-            &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &trans         &kp TILDE  &kp RET     &kp TAB    &trans     &kp BSPC
+            &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &tog 5         &kp TILDE  &kp RET     &kp TAB    &trans     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &tog 3         &trans     &trans      &trans     &trans     &trans
@@ -117,5 +117,23 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+
+        game_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  Q       │  W       │  E       │  R       │  T       │   │  Y       │  U       │  I       │  O       │  P       │
+            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ; :      │
+            &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp SEMI
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                            &lt 2 SPACE &lt 3 CAPS  &lt 3 BSPC &lt 1 SPACE
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
     };
 };
