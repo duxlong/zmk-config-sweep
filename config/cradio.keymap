@@ -45,7 +45,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt 2 SPACE &lt 3 LC(SPACE) &lt 3 BSPC &lt 1 SPACE
+                                           &lt 2 SPACE &lt 3 TAB       &lt 3 BSPC &lt 1 SPACE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -73,11 +73,11 @@
         //│   ESC    │  DELETE  │    UP    │    RET   │          │   │    (     │     )    │    -     │    +     │     =    │
             &kp ESC    &kp DEL    &kp UP     &kp RET    &trans         &kp LPAR    &kp RPAR   &kp MINUS  &kp PLUS   &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   TAB    │   LEFT   │   DOWN   │   RIGHT  │          │   │    ~     │   RET    │    TAB   │          │   BSPC   │
-            &kp TAB    &kp LEFT   &kp DOWN   &kp RIGHT  &tog 5         &kp TILDE  &kp RET     &kp TAB    &trans     &kp BSPC
+        //│   CAPS   │   LEFT   │   DOWN   │   RIGHT  │          │   │    ~     │   RET    │    TAB   │          │   BSPC   │
+            &kp CAPS   &kp LEFT   &kp DOWN   &kp RIGHT  &tog 5         &kp TILDE  &kp RET     &kp TAB    &trans     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   CAPS   │          │          │          │          │   │          │          │          │          │          │
-            &kp CAPS   &trans     &trans     &trans     &tog 3         &trans     &trans      &trans     &trans     &trans
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &tog 3         &trans     &trans      &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
